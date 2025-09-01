@@ -1,0 +1,180 @@
+body.dark-mode {
+  background: #121212;
+  color: #f5f5f5;
+}
+
+
+body.dark-mode .main {
+  background: #121212;
+}
+
+
+body.dark-mode .nav {
+  background: linear-gradient(90deg, #222, #333);
+  color: #fff;
+}
+
+body.dark-mode .nav img {
+  border: 2px solid #444;
+}
+
+
+body.dark-mode .main-container {
+  background: #1e1e1e;
+}
+
+
+body.dark-mode .greet p {
+  color: #ddd;
+}
+
+body.dark-mode .greet span {
+  color: #90caf9;
+}
+
+
+body.dark-mode .card {
+  background: #1f1f1f;
+  color: #f5f5f5;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .card:hover {
+  background: #2a2a2a;
+}
+
+
+body.dark-mode .result-title p {
+  background: #333;
+  color: #f1f1f1;
+}
+
+
+body.dark-mode .ai-response {
+  color: #fff;
+}
+
+body.dark-mode .ai-response strong {
+  color: #ffeb3b;
+}
+
+body.dark-mode .ai-response code {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+body.dark-mode .chat-input {
+  background: #1f1f1f;
+  border-top: 1px solid #444;
+}
+
+body.dark-mode .chat-input textarea {
+  background: #2b2b2b;
+  border: 1px solid #444;
+  color: #f5f5f5;
+}
+
+body.dark-mode .chat-input textarea:focus {
+  border: 1px solid #90caf9;
+  box-shadow: 0 0 0 2px rgba(144, 202, 249, 0.2);
+}
+
+body.dark-mode .chat-input button {
+  background: #1976d2;
+}
+
+body.dark-mode .chat-input button:hover {
+  background: #1565c0;
+}
+
+body.dark-mode .chat-input .stop-button {
+  background: #d32f2f;
+}
+
+body.dark-mode .chat-input .stop-button:hover {
+  background: #b71c1c;
+}
+
+
+body.dark-mode .sidebar {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+}
+
+body.dark-mode .sidebar .chat {
+  background-color: #2a2a2a;
+  color: #f5f5f5;
+}
+
+body.dark-mode .sidebar .previous-title {
+  color: #bbb;
+}
+
+body.dark-mode .sidebar .previous-entry {
+  color: #e0e0e0;
+}
+
+body.dark-mode .sidebar .previous-entry:hover {
+  background-color: #333;
+}
+
+body.dark-mode .sidebar .bottom_item {
+  color: #ddd;
+}
+
+body.dark-mode .sidebar .menu {
+  filter: invert(1);
+}
+
+body.dark-mode .sidebar img {
+  filter: invert(1);
+}
+
+.mode-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.mode-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #2196f3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
