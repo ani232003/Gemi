@@ -27,15 +27,15 @@ const ContextProvider = ({ children }) => {
       console.error(err);
       setResponse("Oops! Something went wrong.");
     } finally {
-      // Always use fullResponse for storing final data
+     
       const geminiMessage = { role: "gemini", text: fullResponse };
       setChatHistory((prev) => [...prev, geminiMessage]);
 
-      // Save to recentPrompts only if prompt is valid
+    
       if (prompt && prompt.trim() !== "") {
         setRecentPrompts((prev) => [
           { prompt, response: fullResponse },
-          ...prev.filter((p) => p.prompt && p.prompt !== prompt), // avoid duplicates
+          ...prev.filter((p) => p.prompt && p.prompt !== prompt), 
         ]);
       }
 
